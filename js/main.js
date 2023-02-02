@@ -40,7 +40,7 @@
     truth_number = (truth_100 * 100 + truth_10 * 10 + truth_1);
     //
   
-    console.log(`答えは ${truth_number}`);
+    // console.log(`答えは ${truth_number}`);
   }
 
   start_button.addEventListener('click', () => {
@@ -55,7 +55,7 @@
     challenge_time = 0;
 
     for (let n = 1; n <= 10; n++) {
-      console.log("run")
+      // console.log("run")
       history_log.children[n].children[1].textContent = "";
       history_log.children[n].children[2].textContent = "";
       history_log.children[n].children[3].textContent = "";
@@ -73,7 +73,7 @@
 
     if (/^\d{3}$/.test(answer_nm)) {
       //３桁の数字だった場合
-      console.log("correct");
+      // console.log("correct");
       let hit_count = 0;
       let blow_count = 0;
 
@@ -125,8 +125,8 @@
           }
         }
 
-        console.log(`ヒット数は ${hit_count}`);
-        console.log(`ブロー数は ${blow_count}`);
+        // console.log(`ヒット数は ${hit_count}`);
+        // console.log(`ブロー数は ${blow_count}`);
 
         {
           challenge_time++;
@@ -155,13 +155,13 @@
           console.log(challenge_time);
           message_area.innerHTML = `ヒット数は ${hit_count}<br>ブロー数は ${blow_count}です<br>次が　最後の　回答です`
         } else {
-          console.log(challenge_time);
+          // console.log(challenge_time);
         }
       }
 
     } else {
       //３桁の数字でなかった場合
-      console.log("wrong");
+      // console.log("wrong");
 
       message_area.classList.add("warn");
       message_area.innerHTML = "3ケタの数字を　入力してください";
@@ -170,5 +170,5 @@
 
     //ゲームスタート
     message_area.innerHTML = "ようこそ　挑戦者<br>0から9の　数字の中から<br>わたしが選んだ　３ケタの数字を<br>見事　当てることが　できますか？<br>チャンスは　10回ですよ。"
-    console.log(message_area.textContent);
+    // console.log(message_area.textContent);
 }
