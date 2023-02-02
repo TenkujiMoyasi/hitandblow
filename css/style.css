@@ -1,0 +1,211 @@
+body,
+h1,
+p,
+a,
+ul,
+li,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: #000;
+  color: #74e319;
+}
+
+.main {
+  max-width: 540px;
+  width: calc(100% - 20px);
+  border: #74e319 1px solid;
+  box-sizing: border-box;
+  margin: 50px auto 50px;
+  padding: 20px 30px 30px;
+  box-sizing: border-box;
+}
+
+.main_title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main_title.warn {
+  color: rgb(255, 0, 0);
+}
+
+.start_area {
+  margin-bottom: 30px;
+}
+.start_area.invisible {
+  display: none;
+}
+.start_area .start_button {
+  text-align: center;
+  max-width: 200px;
+  padding: 20px 10px;
+  margin: 0 auto;
+  background: #000;
+  color: #74e319;
+  border: #74e319 solid 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: 0.3s;
+  transform: translateY(-5px);
+  box-shadow: #74e319 0px 5px 0px;
+}
+.start_area .start_button.restart {
+  color: rgb(255, 0, 0);
+  border: rgb(255, 0, 0) solid 2px;
+  box-shadow: rgb(255, 0, 0) 0px 5px 0px;
+}
+.start_area .start_button:hover {
+  filter: brightness(1.2);
+}
+.start_area .start_button:active {
+  transform: none;
+  box-shadow: none;
+}
+
+.restart_area {
+  margin-bottom: 30px;
+}
+.restart_area.invisible {
+  display: none;
+}
+.restart_area .restart_button {
+  text-align: center;
+  max-width: 200px;
+  padding: 20px 10px;
+  margin: 0 auto;
+  background: #000;
+  color: rgb(255, 0, 0);
+  border: rgb(255, 0, 0) solid 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: 0.3s;
+  transform: translateY(-5px);
+  box-shadow: rgb(255, 0, 0) 0px 5px 0px;
+}
+.restart_area .restart_button:hover {
+  filter: brightness(1.2);
+}
+.restart_area .restart_button:active {
+  transform: none;
+  box-shadow: none;
+}
+
+.message_area {
+  border: #74e319 2px solid;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px 10px;
+  margin-bottom: 30px;
+}
+.message_area.warn {
+  color: rgb(255, 0, 0);
+  border: rgb(255, 0, 0) 2px solid;
+}
+
+.input_area {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.input_area.invisible {
+  display: none;
+}
+.input_area input {
+  border: #74e319 2px solid;
+  background: #666;
+  color: #fff;
+  padding: 5px;
+}
+.input_area input::-moz-placeholder {
+  text-align: center;
+  color: #74e319;
+  font-size: 14px;
+  opacity: 0.5;
+}
+.input_area input:-ms-input-placeholder {
+  text-align: center;
+  color: #74e319;
+  font-size: 14px;
+  opacity: 0.5;
+}
+.input_area input::placeholder {
+  text-align: center;
+  color: #74e319;
+  font-size: 14px;
+  opacity: 0.5;
+}
+.input_area input[type=text]:focus {
+  outline: none;
+}
+.input_area .input_button {
+  color: #74e319;
+  border: #74e319 solid 2px;
+  background: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: 0.3s;
+  transform: translateY(-5px);
+  box-shadow: #74e319 0px 5px 0px;
+}
+.input_area .input_button:hover {
+  filter: brightness(1.2);
+}
+.input_area .input_button:active {
+  transform: none;
+  box-shadow: none;
+}
+
+.history_area ul {
+  border: #74e319 1px solid;
+  box-sizing: border-box;
+}
+.history_area ul li {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom: #74e319 1px solid;
+}
+.history_area ul li:first-child {
+  background: #74e319;
+  color: #000;
+}
+.history_area ul li:first-child div {
+  border-right: #000 1px solid;
+}
+.history_area ul li:last-child {
+  border-bottom: none;
+}
+.history_area ul li div {
+  border-right: #74e319 1px solid;
+}
+.history_area ul li div:last-child {
+  border-right: none;
+}
+
+.rule_area {
+  padding: 20px 10px 0;
+}
+.rule_area .rule {
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */
