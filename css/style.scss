@@ -182,6 +182,7 @@ body {
         border-bottom: none;
       }
       div {
+        padding: 3px 0;
         border-right: $main_color 1px solid;
         &:last-child {
           border-right: none;

@@ -197,6 +197,7 @@ body {
   border-bottom: none;
 }
 .history_area ul li div {
+  padding: 3px 0;
   border-right: #74e319 1px solid;
 }
 .history_area ul li div:last-child {
