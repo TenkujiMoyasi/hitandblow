@@ -3,6 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'ilb2hvb',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <title>Hit&Blow</title>
@@ -13,7 +23,7 @@
       Hit & Blow
     </h1>
     <div class="message_area">
-      ようこそ　挑戦者さま<br>0から9の　数字の中から<br>わたしが選んだ　３ケタの数字を<br>見事に　当ててみてください<br>回答できる　チャンスは　10回までです。
+      Hit&Blowヘ　ヨウコソ　挑戦者サマ<br>私ガ　0カラ9の　数字ノ中カラ　3ツヲ選ンデ<br>３ケタノ　数字ヲ　作リマス<br>アナタハ　見事　ソノ番号ヲ　当テルコトガデキマスカ？<br>回答デキル　チャンスハ　10回マデデス。
     </div>
     <div class="start_area">
       <div class="start_button">
@@ -34,10 +44,10 @@
     <div class="history_area">
       <ul class="history_log">
         <li>
-          <div class="try">Try</div>
-          <div class="number">Number</div>
-          <div class="hit">Hit</div>
-          <div class="blow">Blow</div>
+          <div class="try">回数</div>
+          <div class="number">回答</div>
+          <div class="hit">ヒット</div>
+          <div class="blow">ブロー</div>
         </li>
         <li>
           <div class="try">1</div>
@@ -102,13 +112,14 @@
       </ul>
     </div>
     <div class="rule_area">
+      <h2>ルール</h2>
       <ul class="rule">
-        <li>※3ケタの数字をケタ数まで合致させてください。</li>
-        <li>※答えは0から9の数字の中から選ばれています。</li>
-        <li>※3つの数字に重複はありません。</li>
-        <li>※10回まで回答することができます。</li>
-        <li>※ヒットは数字とケタ数が合致しているものを指します。</li>
-        <li>※ブローは数字のみが合致しているものを指します。</li>
+        <li>※3ケタノ数字ヲケタ数マデ合致サセテクダサイ。</li>
+        <li>※答エハ0カラ9ノ数字ノ中カラ選バレテイマス。</li>
+        <li>※3ツノ数字ニ重複ハアリマセン。</li>
+        <li>※10回マデ回答スルコトガデキマス。</li>
+        <li>※「ヒット」ハ数字トケタ数ガ合致シテイルモノヲ指シマス。</li>
+        <li>※ブローハ数字ノミ合致シテイルモノヲ指シマス。</li>
       </ul>
     </div>
   </main>

@@ -114,7 +114,7 @@
   start_button.addEventListener('click', () => {
     generate_numbers()
     game_reset()
-    message_area.innerHTML = "3ケタの数字を　入力してください";
+    message_area.innerHTML = "3ケタノ数字ヲ　入力シテクダサイ";
   });
 
   //回答ボタン
@@ -135,33 +135,33 @@
 
       enter_record(answer_nm,hit_count,blow_count);
 
-      message_area.innerHTML = `ヒット数は ${hit_count}<br>ブロー数は ${blow_count}です`
+      message_area.innerHTML = `ヒット数ハ ${hit_count}<br>ブロー数ハ ${blow_count}です`
 
       //判定結果
       if (hit_count == 3) {
-        message_area.innerHTML = `お見事です<br>
-          正解は ${truth_number} でした`
+        message_area.innerHTML = `オ見事デス<br>
+          正解ハ ${truth_number} デシタ`
         input_area.classList.add("invisible");
         start_area.classList.remove("invisible")
-        start_button.textContent = "もう一度遊ぶ";
+        start_button.textContent = "モウ一度遊ブ";
       } else if (challenge_time === 10) {
         title.classList.add("warn");
         title.textContent = "GAME OVER";
         message_area.classList.add("warn");
-        message_area.innerHTML = `ヒット数は ${hit_count}<br>ブロー数は ${blow_count}です<br>残念　正解は ${truth_number} でした`
+        message_area.innerHTML = `ヒット数ハ ${hit_count}<br>ブロー数ハ ${blow_count}デス<br>残念　正解ハ ${truth_number} デシタ`
         input_area.classList.add("invisible");
         start_area.classList.remove("invisible");
         start_button.classList.add("restart");
-        start_button.textContent = "再挑戦する";
+        start_button.textContent = "再挑戦スル";
       } else if (challenge_time === 9) {
         console.log(challenge_time);
-        message_area.innerHTML = `ヒット数は ${hit_count}<br>ブロー数は ${blow_count}です<br>次が　最後の　回答です`
+        message_area.innerHTML = `ヒット数ハ ${hit_count}<br>ブロー数ハ ${blow_count}デス<br>次ガ　最後ノ　回答デス`
       }
 
     } else {
       //３桁の数字でなかった場合
       message_area.classList.add("warn");
-      message_area.innerHTML = "3ケタの数字を　入力してください";
+      message_area.innerHTML = "3ケタノ数字ヲ　入力シテクダサイ";
     }
   });
 }

@@ -15,6 +15,7 @@ dd {
 body {
   background: #000;
   color: #74e319;
+  font-family: "dotgothic16", sans-serif;
 }
 
 .main {
@@ -115,6 +116,15 @@ body {
   color: rgb(255, 0, 0);
   border: rgb(255, 0, 0) 2px solid;
 }
+.message_area > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 16px;
+}
+.message_area > div span {
+  display: inline-block;
+}
 
 .input_area {
   display: flex;
@@ -205,8 +215,15 @@ body {
 }
 
 .rule_area {
-  padding: 20px 10px 0;
+  padding: 20px 0 0;
+}
+.rule_area h2 {
+  text-align: center;
+  margin: 10px auto 0;
 }
 .rule_area .rule {
+  padding: 15px;
+  border: #74e319 1px solid;
+  text-align: justify;
   font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

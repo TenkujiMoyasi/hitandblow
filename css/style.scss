@@ -18,6 +18,7 @@ $warn_color: rgb(255, 0, 0);
 body {
   background: #000;
   color: $main_color;
+  font-family: "dotgothic16", sans-serif;
 }
 
 .main {
@@ -113,6 +114,16 @@ body {
     color: $warn_color;
     border: $warn_color 2px solid;
   }
+
+  &>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 16px;
+    span {
+      display: inline-block;
+    }
+  }
 }
 
 .input_area {
@@ -193,8 +204,15 @@ body {
 }
 
 .rule_area {
-  padding: 20px 10px 0;
+  padding: 20px 0 0;
+  h2 {
+    text-align: center;
+    margin: 10px auto 0;
+  }
   .rule {
+    padding: 15px;
+    border: $main_color 1px solid;
+    text-align: justify;
     font-size: 12px;
   }
 }
