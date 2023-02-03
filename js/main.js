@@ -169,6 +169,6 @@
   });
 
     //ゲームスタート
-    message_area.innerHTML = "ようこそ　挑戦者<br>0から9の　数字の中から<br>わたしが選んだ　３ケタの数字を<br>見事　当てることが　できますか？<br>チャンスは　10回ですよ。"
+    message_area.innerHTML = "ようこそ　挑戦者さま<br>0から9の　数字の中から<br>わたしが選んだ　３ケタの数字を<br>見事に　当ててみてください<br>回答できる　チャンスは　10回までです。"
     // console.log(message_area.textContent);
 }
