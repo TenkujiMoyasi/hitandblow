@@ -114,7 +114,7 @@
   start_button.addEventListener('click', () => {
     generate_numbers()
     game_reset()
-    message_area.innerHTML = "3ケタノ数字ヲ　入力シテクダサイ";
+    message_area.innerHTML = "3 ケタノ数字ヲ　入力シテクダサイ";
   });
 
   //回答ボタン
@@ -148,20 +148,20 @@
         title.classList.add("warn");
         title.textContent = "GAME OVER";
         message_area.classList.add("warn");
-        message_area.innerHTML = `ヒット数ハ ${hit_count}<br>ブロー数ハ ${blow_count}デス<br>残念　正解ハ ${truth_number} デシタ`
+        message_area.innerHTML = `ヒット数ハ ${hit_count}<br>ブロー数ハ ${blow_count} デス<br>残念　正解ハ ${truth_number} デシタ`
         input_area.classList.add("invisible");
         start_area.classList.remove("invisible");
         start_button.classList.add("restart");
         start_button.textContent = "再挑戦スル";
       } else if (challenge_time === 9) {
         console.log(challenge_time);
-        message_area.innerHTML = `ヒット数ハ ${hit_count}<br>ブロー数ハ ${blow_count}デス<br>次ガ　最後ノ　回答デス`
+        message_area.innerHTML = `ヒット数ハ ${hit_count}<br>ブロー数ハ ${blow_count} デス<br>次ガ　最後ノ　回答デス`
       }
 
     } else {
       //３桁の数字でなかった場合
       message_area.classList.add("warn");
-      message_area.innerHTML = "3ケタノ数字ヲ　入力シテクダサイ";
+      message_area.innerHTML = "3 ケタノ数字ヲ　入力シテクダサイ";
     }
   });
 }
