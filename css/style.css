@@ -43,8 +43,10 @@ body {
   display: none;
 }
 .start_area .start_button {
+  display: block;
   text-align: center;
   max-width: 200px;
+  width: 100%;
   padding: 20px 10px;
   margin: 0 auto;
   background: #000;
@@ -65,7 +67,7 @@ body {
   border: rgb(255, 0, 0) solid 2px;
   box-shadow: rgb(255, 0, 0) 0px 5px 0px;
 }
-.start_area .start_button:hover {
+.start_area .start_button:hover, .start_area .start_button:focus-visible {
   filter: brightness(1.2);
 }
 .start_area .start_button:active {

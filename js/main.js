@@ -110,16 +110,8 @@
     history_log.children[challenge_time].children[3].textContent = c;
   }
 
-  //開始ボタン
-  start_button.addEventListener('click', () => {
-    generate_numbers()
-    game_reset()
-    message_area.innerHTML = "3 ケタノ数字ヲ　入力シテクダサイ";
-  });
-
-  //回答ボタン
-  input_button.addEventListener('click', () => {
-
+  //ボタンを押したときの処理
+  function push_button() {
     message_area.classList.remove("warn");
     let answer_nm = replace_narrow(answer.value);//全角数字を半角に変換
 
@@ -163,5 +155,34 @@
       message_area.classList.add("warn");
       message_area.innerHTML = "3 ケタノ数字ヲ　入力シテクダサイ";
     }
+    answer.value = "";
+  }
+
+  //開始ボタン
+  start_button.addEventListener('click', () => {
+    generate_numbers()
+    game_reset()
+    answer.focus();
+    message_area.innerHTML = "3 ケタノ数字ヲ　入力シテクダサイ";
   });
+
+  //回答ボタンをクリックしたとき
+  input_button.addEventListener('click', () => {
+    push_button();
+  });
+
+  //エンターを押したとき
+  window.document.onkeydown = function(event){
+    if (event.key === 'Enter') {
+      let n = input_area.classList.contains("invisible");
+      if (n == 0) {
+        push_button();
+      } else {
+        generate_numbers()
+        game_reset()
+        answer.focus();
+        message_area.innerHTML = "3 ケタノ数字ヲ　入力シテクダサイ";
+      }
+    }
+}
 }
